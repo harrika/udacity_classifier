@@ -1,0 +1,81 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                    Goat_01.jpg  label:                       goat
+ 2 key:                   Phone_01.jpg  label:                      phone
+ 3 key:                     Dog_01.jpg  label:                        dog
+ 4 key:                     Dog_02.jpg  label:                        dog
+
+     MATCH:
+
+ NOT A MATCH:
+
+                   Goat_01.jpg: 
+Real:                       goat   Classifier:   ibizan hound, ibizan podenco
+
+                  Phone_01.jpg: 
+Real:                      phone   Classifier:                           ipod
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                         kelpie
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                         kelpie
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+     MATCH:
+
+ NOT A MATCH:
+
+                   Goat_01.jpg: 
+Real:                       goat   Classifier:   ibizan hound, ibizan podenco  
+PetLabelDog: 0  ClassLabelDog: 1
+
+                  Phone_01.jpg: 
+Real:                      phone   Classifier:                           ipod  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                         kelpie  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                         kelpie  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   1
+ 
+pct_match           : 0.000000
+pct_correct_dogs    : 100.000000
+pct_correct_breed   : 0.000000
+pct_correct_notdogs : 50.000000
+
+INCORRECT Dog/NOT Dog Assignments:
+
+Pet label      |      classifier label
+Real:                       goat   Classifier:   ibizan hound, ibizan podenco
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:                         kelpie
+Real:                        dog   Classifier:                         kelpie
+
+** Total Elapsed Runtime: 0:0:3
